@@ -15,6 +15,16 @@ const total = document.querySelector(".total");
 
 buttonCheck.addEventListener("click",check);
 
+function clear(){
+    amt2000.innerHTML="";
+    amt500.innerHTML="";
+    amt100.innerHTML="";
+    amt20.innerHTML="";
+    amt10.innerHTML="";
+    amt5.innerHTML="";
+    amt1.innerHTML="";
+    total.innerHTML="";
+}
 
 
 function check(){
@@ -23,38 +33,17 @@ function check(){
     if(billValue===""||cashValue==="")
     {
        alert.innerHTML = " Enter valid Amount";
-       amt2000.innerHTML="";
-    amt500.innerHTML="";
-    amt100.innerHTML="";
-    amt20.innerHTML="";
-    amt10.innerHTML="";
-    amt5.innerHTML="";
-    amt1.innerHTML="";
-    total.innerHTML="";
+       clear();
     }
     else if(billValue>cashValue)
     {
         alert.innerHTML = "Your bill amount is more than the Cash you paid.";
-        amt2000.innerHTML="";
-        amt500.innerHTML="";
-        amt100.innerHTML="";
-        amt20.innerHTML="";
-        amt10.innerHTML="";
-        amt5.innerHTML="";
-        amt1.innerHTML="";
-        total.innerHTML="";
+        clear();
     }
     else if(billValue===cashValue)
     {
         alert.innerHTML="No returns";
-        amt2000.innerHTML="";
-    amt500.innerHTML="";
-    amt100.innerHTML="";
-    amt20.innerHTML="";
-    amt10.innerHTML="";
-    amt5.innerHTML="";
-    amt1.innerHTML="";
-    total.innerHTML="";
+        clear();
     }
     else
     {
@@ -125,14 +114,6 @@ function calc(a,b){
 buttonReset.addEventListener("click",function(){
     bill.value="";
     cash.value="";
-    alert.innerHTML="";
-    amt2000.innerHTML="";
-    amt500.innerHTML="";
-    amt100.innerHTML="";
-    amt20.innerHTML="";
-    amt10.innerHTML="";
-    amt5.innerHTML="";
-    amt1.innerHTML="";
-    total.innerHTML="";
+    clear();
 })
        
