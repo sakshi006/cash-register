@@ -23,14 +23,38 @@ function check(){
     if(billValue===""||cashValue==="")
     {
        alert.innerHTML = " Enter valid Amount";
+       amt2000.innerHTML="";
+    amt500.innerHTML="";
+    amt100.innerHTML="";
+    amt20.innerHTML="";
+    amt10.innerHTML="";
+    amt5.innerHTML="";
+    amt1.innerHTML="";
+    total.innerHTML="";
     }
     else if(billValue>cashValue)
     {
         alert.innerHTML = "Your bill amount is more than the Cash you paid.";
+        amt2000.innerHTML="";
+        amt500.innerHTML="";
+        amt100.innerHTML="";
+        amt20.innerHTML="";
+        amt10.innerHTML="";
+        amt5.innerHTML="";
+        amt1.innerHTML="";
+        total.innerHTML="";
     }
     else if(billValue===cashValue)
     {
         alert.innerHTML="No returns";
+        amt2000.innerHTML="";
+    amt500.innerHTML="";
+    amt100.innerHTML="";
+    amt20.innerHTML="";
+    amt10.innerHTML="";
+    amt5.innerHTML="";
+    amt1.innerHTML="";
+    total.innerHTML="";
     }
     else
     {
