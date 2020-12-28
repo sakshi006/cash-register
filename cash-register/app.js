@@ -1,6 +1,7 @@
 const bill = document.querySelector(".bill");
 const cash = document.querySelector(".cash");
 const buttonCheck = document.querySelector(".check");
+const buttonReset = document.querySelector(".reset");
 const alert = document.querySelector(".alert");
 const amt2000 = document.querySelector(".note-2000");
 const amt500 = document.querySelector(".note-500");
@@ -11,13 +12,14 @@ const amt5 = document.querySelector(".note-5");
 const amt1 = document.querySelector(".note-1");
 const total = document.querySelector(".total");
 
+
 buttonCheck.addEventListener("click",check);
 
 
 
 function check(){
-  var billValue = parseInt(bill.value);
-  var cashValue = parseInt(cash.value);
+    var billValue = parseInt(bill.value);
+    var cashValue = parseInt(cash.value);
     if(billValue===""||cashValue==="")
     {
        alert.innerHTML = " Enter valid Amount";
@@ -33,7 +35,7 @@ function check(){
     else
     {
         var final = calc(billValue,cashValue);
-         total.innerHTML = "Total Number of currecny notes are "+final;
+         total.innerHTML = "Total Number of currency notes are "+final;
     }
 };
 
@@ -94,3 +96,19 @@ function calc(a,b){
 
      return total;
 }
+
+
+buttonReset.addEventListener("click",function(){
+    bill.value="";
+    cash.value="";
+    alert.innerHTML="";
+    amt2000.innerHTML="";
+    amt500.innerHTML="";
+    amt100.innerHTML="";
+    amt20.innerHTML="";
+    amt10.innerHTML="";
+    amt5.innerHTML="";
+    amt1.innerHTML="";
+    total.innerHTML="";
+})
+       

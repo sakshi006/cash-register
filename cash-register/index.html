@@ -7,26 +7,42 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="head-txt"> CASH REGISTER</div>
+        <img class="head-img" src="images/hero.png">
+        <div class="avl">Available Denominations : 1, 5, 10, 20, 100, 500, 2000</div>
+    </header>
 
     
-    <div class="avl">1 5 10 20 100 500 2000</div>
-    <input class="bill">Enter Bill Amt.</input>
-    
-    <input class="cash">Enter Cash Amt</input>
-    
-    <br>
-    <button class="check">Check</button>
-    <div class="alert"></div>
+    <div class="sec">
+      <input class="bill" placeholder="Enter Bill Amount"></input>
+      
+      <input class="cash" placeholder="Enter Cash Paid"></input>
+      <br>
+      <button class="check"> Check </button>
+      <button class="reset"> Reset </button>
+      <div class="alert"></div>
+    </div>
 
-    <div class="note note-2000"></div>
-    <div class="note note-500"></div>
-    <div class="note note-100"></div>
-    <div class="note note-20"></div>
-    <div class="note note-10"></div>
-    <div class="note note-5"></div>
-    <div class="note note-1"></div>
+    <div class="note note-2000" style="background-color: #fc9efc ;"></div>
+    <div class="note note-500" style="background-color: #b7bec0
+    ;"></div>
+    <div class="note note-100" style="background-color: #d2d2ee
+    ;"></div>
+    <div class="note note-20" style="background-color:#cbfd81
+    ;"></div>
+    <div class="note note-10" style="background-color: #b8854f
+    ;"></div>
+    <div class="note note-5" style="background-color: #c4da73
+    ;"></div>
+    <div class="note note-1" style="background-color: #ffc0f5
+    ;"></div>
     
     <div class="total"></div>
+
+    <footer>
+        <div class="social"> Connect with me</div>
+    </footer>
 
    <script src="app.js"></script>
 </body>
