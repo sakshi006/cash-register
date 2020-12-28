@@ -98,7 +98,7 @@ function calc(a,b){
     }
      var total = i1+i5+i10+i20+i100+i500+i2000;
 
-    alert.innerHTML= "Return Amount is : "+ returnAmt;
+     alert.innerHTML= "Return Amount is : "+ returnAmt;
      amt1.innerHTML="Denominations of ₹1 : "+i1 +" ("+1*i1+")";
      amt5.innerHTML="Denominations of ₹5 : "+i5+" ("+5*i5+")";
      amt10.innerHTML="Denominations of ₹10 : "+i10+" ("+10*i10+")";
